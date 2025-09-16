@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Gamer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarSeccion('presentacion')">Presentación</a></li>
+                <li><a href="#" onclick="mostrarSeccion('proyectos')">Proyectos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('redes')">Redes Sociales</a></li>
+                <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tarjeta de presentación -->
+        <section id="presentacion" class="seccion">
+            <h2>Presentación</h2>
+            <div class="tarjeta">
+                <img src="avatar.jpg" alt="Emanuel Baltazar">
+                <h3>Emanuel Baltazar</h3>
+                <div class="descripcion-columnas">
+                    <div class="columna">
+                        <h4>Perfil</h4>
+                        <p>Estudiante de Ingeniería de Sistemas, gamer.</p>
+                    </div>
+                    <div class="columna">
+                        <h4>Videojuegos</h4>
+                        <p>Supervivencia, estrategia en tiempo real, modo historia interactiva, MOBAs y shooters.</p>
+                    </div>
+                    <div class="columna">
+                        <h4>Comida Favorita</h4>
+                        <p>Hamburguesas, gomitas, helados, frappes, snacks, todo tipo de frituras.</p>
+                    </div>
+                    <div class="columna">
+                        <h4>Personalidad</h4>
+                        <p>Le gusta ayudar a las personas y es muy bromista.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabla de proyectos -->
+        <section id="proyectos" class="seccion" style="display:none;">
+            <h2>Proyectos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Descripción</th>
+                        <th>Año</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Catálogo de Supermercado</td>
+                        <td>Aplicación web para gestionar productos y clientes de un supermercado.</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Tienda de Juegos</td>
+                        <td>Plataforma en línea para vender videojuegos con carrito de compras.</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>Sistema de Memoria</td>
+                        <td>Juego interactivo para mejorar la memoria y la concentración.</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Redes Sociales -->
+        <section id="redes" class="seccion" style="display:none;">
+            <h2>Redes Sociales</h2>
+            <ul class="redes">
+                <li><i class="fab fa-facebook"></i> Facebook</li>
+                <li><i class="fab fa-whatsapp"></i> WhatsApp</li>
+                <li><i class="fab fa-discord"></i> Discord</li>
+                <li><i class="fab fa-tiktok"></i> TikTok</li>
+            </ul>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto" class="seccion" style="display:none;">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
